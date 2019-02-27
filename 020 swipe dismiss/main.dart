@@ -50,6 +50,7 @@ class _SwipeDemissState extends State<SwipeDemiss> {
       itemBuilder: (context, index) {
         final item = items[index];
         return Dismissible(
+          background: Container(color: Colors.red),
           key: Key(item),
           onDismissed: (direction) {
             
